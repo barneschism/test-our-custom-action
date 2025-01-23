@@ -1,11 +1,6 @@
 name: Test
 on: 
   workflow_dispatch:
-    inputs:
-      who-to-greet:
-        type: string
-        required: true
-        default: 'steve'
 
 jobs:
   test-action:
@@ -14,4 +9,4 @@ jobs:
       - name: Say hello
         uses: barneschism/hello-world-docker-action@v1.1.0
         with:
-          who-to-greet: ${{ inputs.who-to-greet }}
+          who-to-greet: 'steve'
