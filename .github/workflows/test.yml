@@ -12,6 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Say hello
-        uses: barneschism/hello-world-docker-action@v1
+        uses: barneschism/hello-world-docker-action@v1.1.0
         with:
           who-to-greet: ${{ inputs.who-to-greet }}
